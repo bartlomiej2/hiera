@@ -1,0 +1,18 @@
+---
+profile::apache::service_ensure: running
+profile::apache::service_enable: true
+profile::apache::mod::ssl::ssl_compression: false
+profile::apache::mod::passenger::passenger_high_performance: Off
+profile::puppet::server::passenger::puppetmaster_dir: "/usr/share/puppet/ext/rack/puppetmasterd"
+profile::redis::redis_address: "127.0.0.1"
+profile::redis::redis_port: "6379"
+profile::ruby::ruby2::ruby_version: "2.1.2"
+profile::app::gitlab::gitlab_ensure: present
+profile::app::gitlab::gitlab_address: "gitlab.puppet1.testlab.local"
+profile::postgresql::globals::postgresql_version: "9.3"
+profile::puppet::puppetdb::listen_address: "0.0.0.0"
+profile::puppet::puppetdb::ssl_listen_address: "0.0.0.0"
+profile::puppet::puppetdb::database_host: "127.0.0.1"
+profile::puppet::puppetdb::database_name: "puppetdb"
+profile::puppet::puppetdb::database_user: "puppetdb"
+profile::puppet::puppetdb::database_password: "dfkrtelk-sd=234__234.d3"
