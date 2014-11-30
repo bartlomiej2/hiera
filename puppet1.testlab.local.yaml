@@ -8,7 +8,7 @@ profile::redis::redis_address: "127.0.0.1"
 profile::redis::redis_port: "6379"
 profile::ruby::ruby2::ruby_version: "2.1.2"
 profile::app::gitlab::gitlab_ensure: present
-profile::app::gitlab::gitlab_address: "gitlab.puppet1.testlab.local"
+profile::app::gitlab::gitlab_address: "gitlab.testlab.local"
 profile::app::gitlab::gitlab_group: "apache"
 profile::postgresql::globals::postgresql_version: "9.3"
 profile::puppet::puppetdb::listen_address: "0.0.0.0"
